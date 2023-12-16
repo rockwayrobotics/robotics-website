@@ -7,7 +7,10 @@ module.exports = {
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
     colors: {
-      primary: colors.stone,
+      current: 'currentColor',
+      transparent: 'transparent',
+      // white: '#ffffff',
+      primary: colors.zinc,
     },
     fontFamily: {
       sans: ['Rubik', 'sans-serif'],
