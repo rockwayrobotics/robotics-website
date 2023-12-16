@@ -1,26 +1,22 @@
 ---
+import { Img } from "astro-imagetools/components";
 const bottomLinks = [
   {
     header: 'Social',
     links: [
       {
         name: 'Github',
-        href: 'https://github.com/',
-        isExternal: true,
-      },
-      {
-        name: 'Twitter',
-        href: 'https://twitter.com/',
+        href: 'https://github.com/rockwayrobotics',
         isExternal: true,
       },
       {
         name: 'Instagram',
-        href: 'https://instagram.com/',
+        href: 'https://www.instagram.com/8089.rockway/',
         isExternal: true,
       },
       {
-        name: 'Facebook',
-        href: 'https://facebook.com/',
+        name: 'Twitter',
+        href: 'https://twitter.com/8089rockway',
         isExternal: true,
       },
     ],
@@ -51,22 +47,22 @@ const bottomLinks = [
     ],
   },
   {
-    header: 'Legal',
+    header: 'Info',
     links: [
       {
-        name: 'Privacy',
-        href: '/privacy',
-        isExternal: false,
+        name: 'Rockway',
+        href: 'https://rockway.ca/',
+        isExternal: true,
       },
       {
-        name: '404',
-        href: '/404',
-        isExternal: false,
+        name: 'First Robotics',
+        href: 'https://www.firstinspires.org/robotics/frc',
+        isExternal: true,
       },
       {
-        name: 'Styleguide',
-        href: '/styleguide',
-        isExternal: false,
+        name: 'The Blue Alliance 8089',
+        href: 'https://www.thebluealliance.com/team/8089',
+        isExternal: true,
       },
     ],
   },
@@ -89,10 +85,13 @@ const bottomLinks = [
           alt="Stone"
         />
         <p class="text-primary-950/70 dark:text-primary-200/70 text-base">
-          Stone is a premium Astro theme specially designed for Business, Marketing, SaaS and
-          Startup websites.
+          Rockway Robotics team 8089.
         </p>
-        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2023 Stone</p>
+        <a href="https://rockway.ca/" target="_blank" class="flex w-48 gap-9">Rockway Mennonite Collegiate
+        
+        <Img alt="Rockway" src="https://rockway.ca/myrockway/wp-content/themes/rockway/images/temp-thumb.jpg" />
+      </a>
+        <p class="text-primary-950/70 dark:text-primary-200/70 text-sm">© 2024 Rockway Mennonite Collegiate</p>
       </div>
 
       <!-- Bottom links -->

@@ -1,20 +1,24 @@
 ---
 import { Img } from "astro-imagetools/components";
+import { landing_image_url } from "../../content/landing.ts"
 ---
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
-    <div class="flex flex-col gap-16">
+    <div class="flex flex-col gap-16 mb-10 relative">
+      <div
+  class="absolute inset-0 -z-10 h-full w-full bg-[linear-gradient(to_right,#80808033_1px,transparent_1px),linear-gradient(to_bottom,#80808033_1px,transparent_1px)] bg-[size:24px_22px]"
+></div>
       <div class="flex flex-col items-start gap-8 sm:gap-10">
         <div class="flex max-w-xl flex-col items-start gap-4 sm:gap-6">
           <h1 class="text-4xl font-medium tracking-tight sm:text-5xl lg:text-6xl">
-            Build Wonder. <br>Build Respect. <br>Build Bridges.<br> Build Robots.
+            <span class="opacity-50">Build Wonder. <br>Build Respect. <br>Build Bridges.<br> Build </span><span class="opacity-100">Robots</span>.
           </h1>
         </div>
       </div>
     </div>
     <div class="overflow-hidden rounded-3xl">
       <Img 
-      src="https://lh3.googleusercontent.com/pw/ABLVV85uQgbgzhQz5NvB_NFYbClBgcV-RsFRdVJoNz2xdNCS48G7tWUjO3vwfsEvz7Eb5iRWYk0NrLzBnTCniyepwcbNPoxZcSjemnNfmYmqGgRx07g3fW8qta1TuilxA-3veR-cw0JD3aVrxNGSyPW0eKGRycF-Lxam5oW4iAyytQ7hfN3etmjUKTjvTqBv9W1CY4E-Ox9fSGtj_C-4_PR4FGMkaCW0ecNxWeLhqGDg19bnguuGh1mmX8BIQN57kmCX8iPNgq7WfyWbkDumEspkpAhmuxkFm5w6kk0YljexkIrdAjPv8cGCHrXuh04NNxrsh3K7RCYJgLQptx1NVK9gNQPrlYvc2kKhKWOwxvGd44oDmeOZ_tDm8mzaN3LDwCDSTvsaRk6yf1vYDUGHQ0pIcyA72k06gsB72jVLGwlcoFKwFbiWI6rFuCPM-Rto_fhcVYfjbYh1wlFlFWK1ChtBIXv_LosbjUvO30DlT8vPF_5xY0kBFHnhST8yZ4-_mRrpl8vIheQGW_S77gxiHhaoN-zf9cc286_v9UKW5Vm-CXn2UiSRqDDbDKSfMRL54eKdAeT-ffDGT0xOMDwrnMI2UV5TefvZqhTgRUQSCFpuGT9j0pMZWb4IIOsn-gXb672oGXVKKm1GFpguWGcnjqQK_YxJ39SQ3lpkXsln-aEhvuouOS4hOVhYKa1xo2HsOpsw6p1nPaQMEDZWNNfpSoj7bT4DdjbQ5HLjcvNajZH5nWQWZosb9dc8s4pDrCD_JCATpSo8s1sl_ABY28SF9gDamn2rCF6J6UAKC_83gJXF-vSd9rTH_9lsI0bpQT0U0QAby2kEWPsb3Ws_HJ0PAcxz7-Qxdy0fYp3PxMmCjT8CVolZkZgxnfwbocWX_mVQDck8NscgO_hW6QLQE6D3I3PI9x57SzgXLBOhnskU5B0=w2670-h1782-s-no-gm?authuser=2"
+      src={landing_image_url}
       alt="A remote image"
     /></div>
   </div>
