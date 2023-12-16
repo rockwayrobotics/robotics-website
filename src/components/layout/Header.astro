@@ -7,8 +7,8 @@ const links = [
   },
   {
     ref: '02',
-    name: 'About',
-    href: '/about',
+    name: 'Awards',
+    href: '/awards',
   },
   {
     ref: '03',
@@ -25,8 +25,7 @@ const links = [
 
 <header
   x-data="{ open: false }"
-  class="transition top-0 z-50 sticky w-full backdrop-blur-lg"
-  :class="{ 'bg-primary-500/80 dark:bg-primary-800/80': open, 'bg-primary-50 dark:bg-primary-950': !(open) }"
+  class="transition sticky top-0 z-50 bg-primary-50 dark:bg-primary-950 shadow-sm"
 >
   <div
     class="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8"
@@ -37,13 +36,13 @@ const links = [
         href="/"
         class="focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 rounded-md focus-visible:outline focus-visible:outline-2"
       >
-        <span class="sr-only">Rockway 8089</span>
+        <span class="sr-only">Stone</span>
         <img
           class="h-8 w-auto"
           width="65"
           height="40"
           :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
-          alt="Rockway 8089"
+          alt="Stone"
         />
       </a>
     </div>
@@ -53,7 +52,7 @@ const links = [
       <!-- Toggle theme mode -->
       <button
         type="button"
-        class="text-primary-950 dark:text-primary-200 hover:bg-primary-500/80 dark:hover:bg-primary-400/80 ring-primary-950 inline-flex h-14 w-14 items-center justify-center rounded-full transition focus:outline-none focus-visible:ring-2"
+        class="text-primary-950 dark:text-primary-200 hover:bg-primary-500/10 dark:hover:bg-primary-400/10 ring-primary-950 inline-flex h-14 w-14 items-center justify-center rounded-full transition focus:outline-none focus-visible:ring-2"
         x-data
         @click="$store.theme.toggle()"
       >
@@ -135,16 +134,21 @@ const links = [
     x-collapse.duration.500ms
   >
     <div class="grid grid-cols-1 gap-16 pb-24 pt-6 lg:grid-cols-2 lg:pt-12">
-      <div
-        class="bg-primary-500/10 dark:bg-primary-400/10 hidden items-center justify-center rounded-3xl px-6 py-8 lg:flex"
-      >
-        <p
-          class="text-primary-950/70 dark:text-primary-200/70 max-w-sm text-xl font-mono"
-        >
-          monofdskladlsdjfklajdslkfjdskl
-        </p>
-      </div>
+      <div><pre class="text-xs opacity-20">
+██████╗  ██████╗  ██████╗██╗  ██╗██╗    ██╗ █████╗ ██╗   ██╗
+██╔══██╗██╔═══██╗██╔════╝██║ ██╔╝██║    ██║██╔══██╗╚██╗ ██╔╝
+██████╔╝██║   ██║██║     █████╔╝ ██║ █╗ ██║███████║ ╚████╔╝ 
+██╔══██╗██║   ██║██║     ██╔═██╗ ██║███╗██║██╔══██║  ╚██╔╝  
+██║  ██║╚██████╔╝╚██████╗██║  ██╗╚███╔███╔╝██║  ██║   ██║   
+╚═╝  ╚═╝ ╚═════╝  ╚═════╝╚═╝  ╚═╝ ╚══╝╚══╝ ╚═╝  ╚═╝   ╚═╝   
 
+██████╗  ██████╗ ██████╗  ██████╗ ████████╗██╗ ██████╗███████╗
+██╔══██╗██╔═══██╗██╔══██╗██╔═══██╗╚══██╔══╝██║██╔════╝██╔════╝
+██████╔╝██║   ██║██████╔╝██║   ██║   ██║   ██║██║     ███████╗
+██╔══██╗██║   ██║██╔══██╗██║   ██║   ██║   ██║██║     ╚════██║
+██║  ██║╚██████╔╝██████╔╝╚██████╔╝   ██║   ██║╚██████╗███████║
+╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝   ╚═╝ ╚═════╝╚══════╝
+      </pre></div>
       <!-- Navigation -->
       <nav class="divide-primary-900/10 dark:divide-primary-300/10 flex flex-col gap-1 divide-y">
         {

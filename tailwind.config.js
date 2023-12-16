@@ -15,6 +15,7 @@ module.exports = {
     },
     fontFamily: {
       sans: ['Rubik', 'sans-serif'],
+      mono: ['azeret-mono', 'monospace'],
     },
   },
 };

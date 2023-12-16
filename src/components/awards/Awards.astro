@@ -1,0 +1,32 @@
+---
+import {awards} from '../../content/awards.ts'
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    
+        </div>
+
+        <!-- Stats -->
+        <dl class="">
+          {
+            awards.map((award) => (
+              <div class="px-6 py-5 bg-white shadow rounded-lg overflow-hidden sm:p-6">
+                  <h1 class="flex-grow text-2xl font-medium">{award.Year}</h1>
+                  <div class="flex flex-wrap gap-2">
+                    {award.awards.map((award) => (
+                      <div class="flex flex-col items-center">
+                        <p class="text-center">{award.title}</p>
+                        <img src={award.image_url} alt="" class="w-40 rounded-sm shadow-sm">
+                      </div>
+                    )
+                    ) }
+                  </div>
+              </div>
+            ))
+          }
+        </dl>
+      </div>
+    </div>
+  </div>
+</section>

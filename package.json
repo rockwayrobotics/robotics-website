@@ -12,6 +12,7 @@
   "dependencies": {
     "@alpinejs/collapse": "^3.13.3",
     "@astrojs/tailwind": "^5.0.3",
+    "@fontsource/azeret-mono": "^5.0.18",
     "@fontsource/rubik": "^5.0.18",
     "@types/alpinejs": "^3.13.5",
     "alpinejs": "^3.13.3",
