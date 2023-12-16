@@ -1,22 +1,22 @@
 export const homepage_sponsors = [
   {
-    name: 'Megacorp 0000',
-    image_url: 'https://rockwayrobotics.github.io/images/engcorp_logo.svg',
+    name: 'place 0000',
+    image_url: 'https://images.squarespace-cdn.com/content/v1/60cb725053322d17222c82ee/a29ea3b9-12a7-4261-bc74-3eb46fcc472a/KI%27s+Tools.png',
   },
   {
-    name: 'Megacorp 0000',
-    image_url: 'https://rockwayrobotics.github.io/images/NDI%20Logo.svg',
+    name: 'place 0000',
+    image_url: 'https://images.squarespace-cdn.com/content/v1/60cb725053322d17222c82ee/a29ea3b9-12a7-4261-bc74-3eb46fcc472a/KI%27s+Tools.png',
   },
   {
-    name: 'Megacorp 0000',
-    image_url: 'https://rockwayrobotics.github.io/images/NDI%20Logo.svg',
+    name: 'place 0000',
+    image_url: 'https://images.squarespace-cdn.com/content/v1/60cb725053322d17222c82ee/a29ea3b9-12a7-4261-bc74-3eb46fcc472a/KI%27s+Tools.png',
   },
   {
-    name: 'Megacorp 0000',
-    image_url: 'https://rockwayrobotics.github.io/images/NDI%20Logo.svg',
+    name: 'place 0000',
+    image_url: 'https://images.squarespace-cdn.com/content/v1/60cb725053322d17222c82ee/a29ea3b9-12a7-4261-bc74-3eb46fcc472a/KI%27s+Tools.png',
   },
   {
-    name: 'Megacorp 0000',
-    image_url: 'https://rockwayrobotics.github.io/images/NDI%20Logo.svg',
+    name: 'place 0000',
+    image_url: 'https://images.squarespace-cdn.com/content/v1/60cb725053322d17222c82ee/a29ea3b9-12a7-4261-bc74-3eb46fcc472a/KI%27s+Tools.png',
   },
 ];
