@@ -12,20 +12,25 @@ const links = [
   },
   {
     ref: '03',
-    name: 'Pricing',
-    href: '/pricing',
+    name: 'Sponsor',
+    href: '/sponsor',
   },
   {
     ref: '04',
     name: 'Contact',
     href: '/contact',
   },
+  {
+    ref: '05',
+    name: 'Newsletter',
+    href: 'https://google.com',
+  }
 ];
 ---
 
 <header
   x-data="{ open: false }"
-  class="transition sticky top-0 z-50 bg-primary-50 dark:bg-primary-950 shadow-sm"
+  class="transition sticky top-0 z-50 bg-primary-100 dark:bg-primary-950 shadow-sm border-b border-primary-200 dark:border-primary-800"
 >
   <div
     class="mx-auto flex max-w-2xl items-center justify-between px-4 py-4 sm:px-6 sm:py-6 lg:max-w-7xl lg:px-8"
@@ -134,7 +139,7 @@ const links = [
     x-collapse.duration.500ms
   >
     <div class="grid grid-cols-1 gap-16 pb-24 pt-6 lg:grid-cols-2 lg:pt-12">
-      <div><pre class="text-xs opacity-20">
+      <div><pre class="text-[5px] sm:text-xs opacity-20">
 ██████╗  ██████╗  ██████╗██╗  ██╗██╗    ██╗ █████╗ ██╗   ██╗
 ██╔══██╗██╔═══██╗██╔════╝██║ ██╔╝██║    ██║██╔══██╗╚██╗ ██╔╝
 ██████╔╝██║   ██║██║     █████╔╝ ██║ █╗ ██║███████║ ╚████╔╝ 
@@ -148,14 +153,14 @@ const links = [
 ██╔══██╗██║   ██║██╔══██╗██║   ██║   ██║   ██║██║     ╚════██║
 ██║  ██║╚██████╔╝██████╔╝╚██████╔╝   ██║   ██║╚██████╗███████║
 ╚═╝  ╚═╝ ╚═════╝ ╚═════╝  ╚═════╝    ╚═╝   ╚═╝ ╚═════╝╚══════╝
-      </pre></div>
+</pre></div>
       <!-- Navigation -->
       <nav class="divide-primary-900/10 dark:divide-primary-300/10 flex flex-col gap-1 divide-y">
         {
           links.map((link) => (
             <a
               href={link.href}
-              class="text-primary-950 dark:text-primary-200 group inline-flex py-6 text-3xl font-medium tracking-tight transition focus-visible:outline-none sm:py-8 sm:text-4xl"
+              class="text-primary-950 dark:text-primary-200 group inline-flex py-2 text-3xl font-medium tracking-tight transition focus-visible:outline-none sm:py-3 sm:text-4xl"
             >
               <div class="group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200 flex flex-1 items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2">
                 <div class="flex items-center gap-6">
