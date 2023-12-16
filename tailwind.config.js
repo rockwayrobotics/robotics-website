@@ -1,15 +1,14 @@
 /** @type {import('tailwindcss').Config} */
 
 const colors = require('tailwindcss/colors');
-
+const defaults = require('tailwindcss/defaultTheme')
 module.exports = {
   darkMode: 'class',
   content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}'],
   theme: {
-    colors: {
-      current: 'currentColor',
-      transparent: 'transparent',
-      // white: '#ffffff',
+    defaults,
+    extend:{
+      colors: {
       primary: colors.gray,
       accent: colors.red,
     },
@@ -18,4 +17,5 @@ module.exports = {
       mono: ['azeret-mono', 'monospace'],
     },
   },
+}
 };
