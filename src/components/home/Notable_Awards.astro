@@ -1,31 +1,5 @@
 ---
-const services = [
-  {
-    year: '20201',
-    name: "you're so cool man",
-    description: "a very long description about the awards that we won (we're so good)",
-  },
-  {
-    year: '20201',
-    name: "you're so cool man",
-    description: "a very long description about the awards that we won (we're so good)",
-  },
-  {
-    year: '20201',
-    name: "you're so cool man",
-    description: "a very long description about the awards that we won (we're so good)",
-  },
-  {
-    year: '20201',
-    name: "you're so cool man",
-    description: "a very long description about the awards that we won (we're so good)",
-  },
-  {
-    year: '20201',
-    name: "you're so cool man",
-    description: "a very long description about the awards that we won (we're so good)",
-  },
-];
+import { notable_awards } from '../../content/notable_awards.ts'
 ---
 
 <section class="py-16 sm:py-20">
@@ -34,7 +8,7 @@ const services = [
       <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Notable awards | <a href="/awards" class="opacity-60 hover:underline">See all →</a></h2>
       <div class="grid gap-8 lg:grid-cols-3">
         {
-          services.map((service) => (
+          notable_awards.map((service) => (
             <div class="flex flex-col gap-4 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
               <p class="text-sm">Year {service.year}</p>
               <div class="flex flex-col gap-2">
