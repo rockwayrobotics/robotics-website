@@ -1,34 +1,6 @@
 ---
-const features = [
-  {
-    id: '2020',
-    name: '2020',
-    images: [
-      {
-        image_url: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-        image_description: 'Two models wearing women’s black cotton crewneck tee-shirts.',
-      },
-      {
-        image_url: 'https://tailwindui.com/img/templates/primer/preview.png',
-        image_description: 'Two models wearing women’s black cotton crewneck tee-shirts.',
-      },
-    ],
-  },
-  {
-    id: '2019',
-    name: '2019',
-    images: [
-      {
-        image_url: 'https://tailwindui.com/img/ecommerce-images/home-page-02-edition-01.jpg',
-        image_description: 'Two models wearing women’s black cotton crewneck tee-shirts.',
-      },
-      {
-        image_url: 'https://tailwindui.com/img/templates/primer/preview.png',
-        image_description: 'Two models wearing women’s black cotton crewneck tee-shirts.',
-      },
-    ],
-  },
-];
+import {list} from '../../content/gallery.ts'
+import { Img } from "astro-imagetools/components";
 ---
 
 <section class="py-16 sm:py-20">
@@ -40,7 +12,7 @@ const features = [
           x-data="{ selected: null, toggle(value) { this.selected = this.selected === value ? null : value } }"
         >
           {
-            features.map((feature, index) => (
+            list.map((group, index) => (
               <div
                 class="rounded-3xl px-4 transition"
                 x-data={`{ id: ${index}, get isOpen() { return this.id === this.selected }, get isNextOpen() { return (this.id + 1) === this.selected } }`}
@@ -54,13 +26,13 @@ const features = [
                   <button
                     type="button"
                     class="group block w-full py-6 text-left transition focus-visible:outline-none"
-                    aria-controls={feature.id}
+                    aria-controls={group.id}
                     x-on:click="toggle(id)"
                     aria-expanded="false"
                     x-bind:aria-expanded="isOpen.toString()"
                   >
                     <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
-                      <span class="font-medium">{feature.name}</span>
+                      <span class="font-medium">{group.name}</span>
                       <span class="ml-6 flex h-7 items-center">
                         <svg
                           class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"
@@ -76,14 +48,19 @@ const features = [
                     </div>
                   </button>
                 </dt>
-                <dd class="pb-6 pr-6" id={feature.id} x-show="isOpen" x-cloak x-collapse>
-                  <p class="text-base text-primary-950/70 dark:text-primary-200/70">
-                    {feature.description}
-                  </p>
+                <dd class="pb-6 pr-6" id={group.id} x-show="isOpen" x-cloak x-collapse>
+                  <div class="text-base text-primary-950/70 dark:text-primary-200/70 flex">
+                    {
+                      group.images.map(image => (
+                      <div class="flex-grow">{image.image_description}
+                      <Img src={image.image_url} alt={image.image_description} /></div>  
+                      ))
+                    }
+                  </div>
                 </dd>
               </div>
             ))
-          }
+            }
         </dl>
       </div>
     </div>
