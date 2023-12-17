@@ -1,0 +1,95 @@
+---
+const pricing = [
+  {
+    name: 'Red',
+    color: 'bg-red-400/50 hover:bg-red-400 dark:bg-red-500/60 dark:hover:bg-red-500',
+    price: 'Under $1000',
+    action: 'Contact Us',
+    features: ['Logo on website sponsor page', 'Shoutout and thanks on our social media'],
+  },
+  {
+    name: 'Black',
+    color: 'bg-black text-white',
+    price: '$1000 - 2499',
+    action: 'Contact Us',
+    features: [
+      'Logo on website sponsor page',
+      'Shoutout and thanks on our social media',
+      'Logo on pit banner',
+    ],
+  },
+  {
+    name: 'Grey',
+    color: 'bg-gray-400/50 hover:bg-gray-400 dark:bg-gray-500/60 dark:hover:bg-gray-500',
+    price: '$2500 - 4999',
+    action: 'Contact Us',
+    features: [
+      'Logo on website sponsor page',
+      'Logo on pit banner',
+      'Logo on sweater',
+      'Shoutout and thanks on our social media',
+    ],
+  },
+  {
+    name: 'White',
+    price: 'Over $5000',
+    color: 'bg-white text-black ring-2 ring-white/50',
+    isFlagged: true,
+    action: 'Contact Us',
+    features: [
+      'Logo on robot',
+      'Logo on main website page',
+      'Logo on pit banner',
+      'Logo on sweater',
+      'Shoutout and thanks on our social media'
+    ],
+  },
+];
+---
+
+<section class="py-16 sm:py-20">
+  <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
+    <div class="-mt-8 grid gap-4 lg:mt-0 lg:grid-cols-4">
+      {
+        pricing.map((item) => (
+          <div
+            class:list={[
+              'relative flex flex-col gap-8 rounded-3xl p-8 ring-2 ring-primary-200 dark:ring-primary-700/50',
+              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10'
+            ]}
+          >
+            <div class="flex-1">
+              <h2 class="text-xl font-medium">{item.name}</h2>
+              <p class="mt-4 flex items-baseline">
+                <span class="text-4xl font-medium tracking-tight">{item.price}</span>
+              </p>
+              <ul role="list" class="mt-6 space-y-6">
+                {item.features.map((feature) => (
+                  <li class="flex gap-3">
+                    <svg
+                      class="h-6 w-6 flex-shrink-0 text-primary-600 dark:text-primary-400"
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path d="M12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12C22 17.5228 17.5228 22 12 22ZM11.0026 16L18.0737 8.92893L16.6595 7.51472L11.0026 13.1716L8.17421 10.3431L6.75999 11.7574L11.0026 16Z" />
+                    </svg>
+                    <span>{feature}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <a
+              href="/contact"
+              class="inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 ring-2 ring-neutral-500/50"
+              class:list={[item.color]}
+            >
+              Contact Us
+            </a>
+          </div>
+        ))
+      }
+    </div>
+  </div>
+</section>

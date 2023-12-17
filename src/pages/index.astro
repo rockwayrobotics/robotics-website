@@ -1,56 +1,21 @@
 ---
+import About from '../components/home/About.astro';
+import Cta from '../components/home/Cta.astro';
+// import Expertise from '../components/home/Expertise.astro';
+import Hero from '../components/home/Hero.astro';
+import Services from '../components/home/Notable_Awards.astro';
+import Testimonials from '../components/home/homepage_sponsors.astro';
 import Layout from '../layouts/Layout.astro';
-import { getCollection } from "astro:content";
-import formatDate from "../utils/formatDate";
-
-const posts = (await getCollection("posts")).sort(function (first, second) {
-  return second.data.publishedAt.getTime() - first.data.publishedAt.getTime();
-});
 ---
 
 <Layout
   description="The website for FRC Team 8089, Rockway Robotics."
   title="8089 · Rockway Robotics"
 >
-  <main class="flex flex-col gap-10 pt-10">
-    <h1 class="text-3xl font-mono italic">Posts</h1>
-    <article class="flex flex-col gap-4">
-      {
-        posts.map((post) => (
-          <a
-            class="group"
-            href={`/posts/${post.slug}`}
-          >
-            <div class="flex w-full items-center justify-between">
-              <h2 class="text-lg">{post.data.title}</h2>
-              <div class="flex flex-row items-center gap-1">
-                <p>{formatDate(post.data.publishedAt)}</p>
-                <svg
-                  width="18"
-                  height="18"
-                  viewBox="0 0 18 18"
-                  fill="none"
-                  class="transition-all duration-300 group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:scale-110 "
-                >
-                  <path
-                    d="M5.25 12.75L12.75 5.25"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M5.25 5.25H12.75V12.75"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </div>
-            </div>
-            <p class="">{post.data.description}</p>
-          </a>
-        ))
-      }
-    </article>
-  </main>
+  <Hero />
+  <Services />
+  <!-- <Expertise /> -->
+  <About />
+  <Testimonials />
+  <Cta />
 </Layout>
