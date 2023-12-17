@@ -49,9 +49,9 @@ import { Img } from 'astro-imagetools/components';
                   </button>
                 </dt>
                 <dd class="" id={group.id} x-show="isOpen" x-cloak x-collapse>
-                  <div class="grid grid-cols-6 place-content-center gap-2 text-base text-primary-950/70 dark:text-primary-200/70">
+                  <div class="grid grid-cols-3 place-content-center gap-3 text-base text-primary-950/70 dark:text-primary-200/70 p-2 pb-5">
                     {group.images.map((image) => (
-                      <div class="internal" class:list={image.aspect}>
+                      <div class="internal bg-white h-full w-full dark:bg-black" class:list={image.aspect}>
                         <Img src={image.image_url} alt={image.image_description} />
                       </div>
                     ))}
@@ -71,17 +71,11 @@ import { Img } from 'astro-imagetools/components';
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1;
     overflow: hidden;
-    height: min-content;
-    margin-top: auto;
-    margin-bottom: auto;
+    border-radius: 0.5rem;
   }
   .horizontal {
-    aspect-ratio: 16/9;
-  }
-
-  .vertical {
-    aspect-ratio: 9/16;
+    aspect-ratio: 3/2;
+    grid-column: span 2 / span 2;
   }
 </style>
