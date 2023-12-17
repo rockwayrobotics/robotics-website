@@ -1,6 +1,6 @@
 ---
-import {list} from '../../content/gallery.ts'
-import { Img } from "astro-imagetools/components";
+import { list } from '../../content/gallery.ts';
+import { Img } from 'astro-imagetools/components';
 ---
 
 <section class="py-16 sm:py-20">
@@ -48,21 +48,40 @@ import { Img } from "astro-imagetools/components";
                     </div>
                   </button>
                 </dt>
-                <dd class="pb-6 pr-6" id={group.id} x-show="isOpen" x-cloak x-collapse>
-                  <div class="text-base text-primary-950/70 dark:text-primary-200/70 flex">
-                    {
-                      group.images.map(image => (
-                      <div class="flex-grow">{image.image_description}
-                      <Img src={image.image_url} alt={image.image_description} /></div>  
-                      ))
-                    }
+                <dd class="" id={group.id} x-show="isOpen" x-cloak x-collapse>
+                  <div class="grid grid-cols-6 place-content-center gap-2 text-base text-primary-950/70 dark:text-primary-200/70">
+                    {group.images.map((image) => (
+                      <div class="internal" class:list={image.aspect}>
+                        <Img src={image.image_url} alt={image.image_description} />
+                      </div>
+                    ))}
                   </div>
                 </dd>
               </div>
             ))
-            }
+          }
         </dl>
       </div>
     </div>
   </div>
 </section>
+
+<style>
+  .internal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    overflow: hidden;
+    height: min-content;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .horizontal {
+    aspect-ratio: 16/9;
+  }
+
+  .vertical {
+    aspect-ratio: 9/16;
+  }
+</style>
