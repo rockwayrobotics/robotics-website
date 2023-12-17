@@ -32,7 +32,7 @@ import { Img } from 'astro-imagetools/components';
                     x-bind:aria-expanded="isOpen.toString()"
                   >
                     <div class="flex items-center justify-between rounded-3xl group-focus-visible:outline group-focus-visible:outline-2 group-focus-visible:outline-offset-2 group-focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200">
-                      <span class="font-medium">{group.name}</span>
+                      <span class="font-medium px-3">{group.name}</span>
                       <span class="ml-6 flex h-7 items-center">
                         <svg
                           class="h-6 w-6 rotate-0 transform text-primary-600 transition duration-200 ease-in-out dark:text-primary-400"
@@ -49,7 +49,7 @@ import { Img } from 'astro-imagetools/components';
                   </button>
                 </dt>
                 <dd class="" id={group.id} x-show="isOpen" x-cloak x-collapse>
-                  <div class="grid grid-cols-3 place-content-center gap-3 text-base text-primary-950/70 dark:text-primary-200/70 p-2 pb-5">
+                  <div class="sm:grid sm:grid-cols-3 place-content-center gap-3 text-base text-primary-950/70 dark:text-primary-200/70 p-2 pb-5">
                     {group.images.map((image) => (
                       <div class="internal bg-white h-full w-full dark:bg-black" class:list={image.aspect}>
                         <Img src={image.image_url} alt={image.image_description} />
