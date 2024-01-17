@@ -1,11 +1,24 @@
 ---
-import { notable_awards } from '../../content/homepage_awards.ts'
+import { notable_awards } from '../../content/_homepage_awards.ts';
 ---
 
 <section class="py-16 sm:py-20">
   <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:max-w-7xl lg:px-8">
     <div class="flex flex-col gap-12 sm:gap-16">
-      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">Notable awards | <a href="/awards" class="opacity-60 hover:underline">See all →</a></h2>
+      <div class="flex gap-10">
+        <div class="banner">
+          <img src="/images/first_icon.svg" class="frcLogo" alt="FRC Logo" />
+          <div class="bannerTopText">
+            <span>Winner</span>
+          </div>
+          <div class="bannerBottomText">
+            <span>2022 St. Mary C.S.S. District</span>
+          </div>
+        </div>
+      </div>
+      <h2 class="text-3xl font-medium tracking-tight sm:text-4xl">
+        Notable awards | <a href="/awards" class="opacity-60 hover:underline">See all →</a>
+      </h2>
       <div class="grid gap-8 lg:grid-cols-3">
         {
           notable_awards.map((service) => (
@@ -23,4 +36,4 @@ import { notable_awards } from '../../content/homepage_awards.ts'
       </div>
     </div>
   </div>
-</section>
+</section>../../content/_homepage_awards.ts

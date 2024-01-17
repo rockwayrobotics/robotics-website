@@ -9,7 +9,7 @@ module.exports = {
     defaults,
     extend: {
       gridTemplateColumns: {
-        '3': 'repeat(3, minmax(0, 1fr))',
+        3: 'repeat(3, minmax(0, 1fr))',
       },
       colors: {
         primary: colors.gray,

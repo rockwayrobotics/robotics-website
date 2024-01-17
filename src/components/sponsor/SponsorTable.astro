@@ -1,50 +1,5 @@
 ---
-const pricing = [
-  {
-    name: 'Red',
-    color: 'bg-red-400/50 hover:bg-red-400 dark:bg-red-500/60 dark:hover:bg-red-500',
-    price: 'Under $1000',
-    action: 'Contact Us',
-    features: ['Logo on website sponsor page', 'Shoutout and thanks on our social media'],
-  },
-  {
-    name: 'Black',
-    color: 'bg-black text-white',
-    price: '$1000 - 2499',
-    action: 'Contact Us',
-    features: [
-      'Logo on website sponsor page',
-      'Shoutout and thanks on our social media',
-      'Logo on pit banner',
-    ],
-  },
-  {
-    name: 'Grey',
-    color: 'bg-gray-400/50 hover:bg-gray-400 dark:bg-gray-500/60 dark:hover:bg-gray-500',
-    price: '$2500 - 4999',
-    action: 'Contact Us',
-    features: [
-      'Logo on website sponsor page',
-      'Logo on pit banner',
-      'Logo on sweater',
-      'Shoutout and thanks on our social media',
-    ],
-  },
-  {
-    name: 'White',
-    price: 'Over $5000',
-    color: 'bg-white text-black ring-2 ring-white/50',
-    isFlagged: true,
-    action: 'Contact Us',
-    features: [
-      'Logo on robot',
-      'Logo on main website page',
-      'Logo on pit banner',
-      'Logo on sweater',
-      'Shoutout and thanks on our social media'
-    ],
-  },
-];
+import { pricing } from '../../content/_sponsor_pricing';
 ---
 
 <section class="py-16 sm:py-20">
@@ -55,7 +10,7 @@ const pricing = [
           <div
             class:list={[
               'relative flex flex-col gap-8 rounded-3xl p-8 ring-2 ring-primary-200 dark:ring-primary-700/50',
-              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10'
+              item.isFlagged && 'bg-primary-500/10 dark:bg-primary-400/10',
             ]}
           >
             <div class="flex-1">
@@ -82,7 +37,7 @@ const pricing = [
             </div>
             <a
               href="/contact"
-              class="inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400 ring-2 ring-neutral-500/50"
+              class="inline-flex w-full items-center justify-center rounded-full border border-transparent px-5 py-3 text-base font-medium ring-2 ring-neutral-500/50 transition focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary-600 dark:focus-visible:outline-primary-400"
               class:list={[item.color]}
             >
               Contact Us
@@ -93,3 +48,4 @@ const pricing = [
     </div>
   </div>
 </section>
+ ../../content/_sponsor_pricing

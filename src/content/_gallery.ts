@@ -6,7 +6,7 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
@@ -16,7 +16,7 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
@@ -26,7 +26,7 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
@@ -36,14 +36,13 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
         aspect: 'vertical',
       },
-      
     ],
   },
   {
@@ -53,7 +52,7 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
@@ -63,7 +62,7 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
@@ -73,7 +72,7 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
@@ -83,14 +82,13 @@ export const list = [
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
-        aspect: 'horizontal'
+        aspect: 'horizontal',
       },
       {
         image_url: 'https://tailwindcss.com/_next/static/media/tailwindui@75.edfebabd.jpg',
         image_description: '2020',
         aspect: 'vertical',
       },
-      
     ],
   },
 ];
