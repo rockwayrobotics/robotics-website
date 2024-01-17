@@ -7,6 +7,11 @@ export const awards = [
         image_url:
           'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Canadian_National_Exhibition_logo.svg/1200px-Canadian_National_Exhibition_logo.svg.png',
       },
+      {
+        title: 'CNE Backyard Innovator',
+        image_url:
+          'https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Canadian_National_Exhibition_logo.svg/1200px-Canadian_National_Exhibition_logo.svg.png',
+      },
     ],
   },
   {
