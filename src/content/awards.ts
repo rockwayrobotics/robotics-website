@@ -1,44 +1,39 @@
 export const awards = [
   {
-    title: '2019 example',
+    title: '2023',
     awards: [
       {
-        title: 'Something',
-        image_url:
-          'https://t4.ftcdn.net/jpg/02/10/21/11/360_F_210211160_Q9SzGgbT68Lq6WgjIbNW6KrCDmzrb3xs.jpg',
-      },
-      {
-        title: 'Something',
+        title: 'CNE Winners',
         image_url:
           'https://t4.ftcdn.net/jpg/02/10/21/11/360_F_210211160_Q9SzGgbT68Lq6WgjIbNW6KrCDmzrb3xs.jpg',
       },
     ],
   },
   {
-    title: '2018',
+    title: '2022',
     awards: [
       {
-        title: 'Something fjdksafdkslfjadklsf;j longer;f',
+        title: 'St. Mary C.S.S. Winners',
         image_url:
           'https://t4.ftcdn.net/jpg/02/10/21/11/360_F_210211160_Q9SzGgbT68Lq6WgjIbNW6KrCDmzrb3xs.jpg',
       },
       {
-        title: 'Something',
+        title: 'University of Waterloo Winners',
+        image_url:
+          'https://t4.ftcdn.net/jpg/02/10/21/11/360_F_210211160_Q9SzGgbT68Lq6WgjIbNW6KrCDmzrb3xs.jpg',
+      },
+      {
+        title: 'Judges Award',
         image_url:
           'https://t4.ftcdn.net/jpg/02/10/21/11/360_F_210211160_Q9SzGgbT68Lq6WgjIbNW6KrCDmzrb3xs.jpg',
       },
     ],
   },
   {
-    title: '2017',
+    title: '2020',
     awards: [
       {
-        title: 'Something ;jdkldfajsdfkldajflk;f',
-        image_url:
-          'https://t4.ftcdn.net/jpg/02/10/21/11/360_F_210211160_Q9SzGgbT68Lq6WgjIbNW6KrCDmzrb3xs.jpg',
-      },
-      {
-        title: 'Something',
+        title: 'Durham College Winners',
         image_url:
           'https://t4.ftcdn.net/jpg/02/10/21/11/360_F_210211160_Q9SzGgbT68Lq6WgjIbNW6KrCDmzrb3xs.jpg',
       },
