@@ -41,17 +41,30 @@ const links = [
     class="mx-auto flex max-w-2xl items-center justify-between px-4 py-2 sm:px-6 lg:max-w-7xl lg:px-8"
   >
     <!-- Brand logo -->
-    <div class="flex">
+    <div class="flex items-center gap-1">
       <a
         href="/"
         class="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200"
       >
         <span class="sr-only">Rockway 8089</span>
         <img
-          class="h-8 w-auto"
+          class="h-16 w-auto"
           width="65"
           height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
+          :src="$store.theme.isDark ? 'https://github.com/rockwayrobotics/branding/blob/main/white/flames-gear-full.png?raw=true' : 'https://github.com/rockwayrobotics/branding/blob/main/red/flames-gear-full.png?raw=true'"
+          alt="8089 Logo"
+        />
+      </a>
+      <a
+        href="/"
+        class="rounded-md focus-visible:outline focus-visible:outline-2 focus-visible:outline-primary-950 dark:group-focus-visible:outline-primary-200"
+      >
+        <span class="sr-only">Rockway 8089</span>
+        <img
+          class="h-10 w-auto"
+          width="65"
+          height="40"
+          :src="$store.theme.isDark ? 'https://github.com/rockwayrobotics/branding/blob/main/white/logo-no-gear.png?raw=true' : 'https://github.com/rockwayrobotics/branding/blob/main/red/logo-no-gear.png?raw=true'"
           alt="8089 Logo"
         />
       </a>

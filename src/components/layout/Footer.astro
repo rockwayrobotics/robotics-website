@@ -88,18 +88,17 @@ const bottomLinks = [
     <div class="flex flex-col justify-between gap-12 sm:gap-16 lg:flex-row">
       <div class="flex max-w-sm flex-col items-start gap-6 sm:gap-8">
         <img
-          class="h-8 w-auto"
-          width="65"
-          height="40"
-          :src="$store.theme.isDark ? '/assets/logo-inverted.svg' : '/assets/logo.svg'"
+          class="h-32 w-auto"
+          width=""
+          height="128"
+          :src="$store.theme.isDark ? 'https://github.com/rockwayrobotics/branding/blob/main/white/logo-full.png?raw=true' : 'https://github.com/rockwayrobotics/branding/blob/main/red/logo-full.png?raw=true'"
           alt="Rockway 8089"
         />
         <p class="text-base text-primary-950/70 dark:text-primary-200/70">
           Rockway Robotics team 8089.
         </p>
-        <a href="https://rockway.ca/" target="_blank" class="flex w-48 gap-9"
+        <a href="https://rockway.ca/" target="_blank" class="flex w-fit gap-9 items-center"
           >Rockway Mennonite Collegiate
-
           <img
             alt="Rockway"
             width="48"

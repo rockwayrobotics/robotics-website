@@ -1,5 +1,5 @@
 ---
-import { notable_awards } from '../../content/_homepage_awards.ts';
+import { homepage_awards } from '../../content/_homepage_awards.ts';
 ---
 
 <section class="py-16 sm:py-20">
@@ -7,7 +7,7 @@ import { notable_awards } from '../../content/_homepage_awards.ts';
     <div class="flex flex-col gap-12 sm:gap-16">
       <div class="flex justify-center gap-10">
         <div
-          class="banner flex w-64 flex-col items-center justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
+          class="banner flex w-64 flex-col h-92 justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
         >
           <img
             src="https://rockwayrobotics.github.io/images/first_icon.svg"
@@ -22,7 +22,7 @@ import { notable_awards } from '../../content/_homepage_awards.ts';
           </div>
         </div>
         <div
-          class="banner flex w-64 flex-col items-center justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
+          class="banner flex w-64 flex-col h-92 justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
         >
           <img
             src="https://rockwayrobotics.github.io/images/first_icon.svg"
@@ -33,7 +33,7 @@ import { notable_awards } from '../../content/_homepage_awards.ts';
             <span>Winner</span>
           </div>
           <div class="">
-            <span>2020 DURHAM COLLEGE DISTRICT</span>
+            <span>2020 Durham College District</span>
           </div>
         </div>
       </div>
@@ -42,14 +42,12 @@ import { notable_awards } from '../../content/_homepage_awards.ts';
       </h2>
       <div class="grid gap-8 lg:grid-cols-3">
         {
-          notable_awards.map((service) => (
+          homepage_awards.map((service) => (
             <div class="flex flex-col gap-4 rounded-3xl bg-primary-500/10 px-6 py-8 dark:bg-primary-400/10">
               <p class="text-sm">Year {service.year}</p>
               <div class="flex flex-col gap-2">
-                <h3 class="text-2xl font-medium">{service.name}</h3>
-                <p class="text-base text-primary-950/70 dark:text-primary-200/70 sm:text-lg">
-                  {service.description}
-                </p>
+                <h3 class="text-2xl font-medium">{service.title}</h3>
+                
               </div>
             </div>
           ))
