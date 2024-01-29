@@ -7,7 +7,7 @@ import { homepage_awards } from '../../content/_homepage_awards.ts';
     <div class="flex flex-col gap-12 sm:gap-16">
       <div class="flex justify-center gap-10">
         <div
-          class="banner flex w-64 flex-col h-92 justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
+          class="banner h-92 flex w-64 flex-col justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
         >
           <img
             src="https://rockwayrobotics.github.io/images/first_icon.svg"
@@ -22,7 +22,7 @@ import { homepage_awards } from '../../content/_homepage_awards.ts';
           </div>
         </div>
         <div
-          class="banner flex w-64 flex-col h-92 justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
+          class="banner h-92 flex w-64 flex-col justify-center bg-[#104BCA] p-6 pb-28 text-center text-white"
         >
           <img
             src="https://rockwayrobotics.github.io/images/first_icon.svg"
@@ -47,7 +47,6 @@ import { homepage_awards } from '../../content/_homepage_awards.ts';
               <p class="text-sm">Year {service.year}</p>
               <div class="flex flex-col gap-2">
                 <h3 class="text-2xl font-medium">{service.title}</h3>
-                
               </div>
             </div>
           ))
@@ -60,8 +59,10 @@ import { homepage_awards } from '../../content/_homepage_awards.ts';
       clip-path: polygon(100% 0, 100% 100%, 50% 85%, 0 100%, 0 0);
       transition: all 0.3s ease;
     }
-    .banner:hover{
-      box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    .banner:hover {
+      box-shadow:
+        0 10px 15px -3px rgba(0, 0, 0, 0.1),
+        0 4px 6px -2px rgba(0, 0, 0, 0.05);
       transform: translateY(-10px);
     }
   </style>
